@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem;
+    color:#48ee90;
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 80vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background: #293447;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(52, 87, 2200, 0.2);
+}
+
+.gameDetails{
+    color: #b8c6dc;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: #212837;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+}
+.board .food{
+    background: #ff003d;
+    transform: scale(80%);
+    border-radius: .25rem;
+    z-index: 1;
+}
+.board .head{
+    background: #48ee90;
+    z-index: 2;
+}
+
+#leader {
+    background: #4ae28c;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+.controls i{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #b8c6dc;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171b26;
+}
+.controls i:hover{
+    transform:scale(110%);
+}
+
+.retryBtn {
+    margin: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #48ee90;
+    border-radius: .25rem;
+    font-size: 1.4rem;
+    padding: 0;
+}
+.retryBtn:hover{
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .gameDetails{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls{
+        display: flex;
+    }
+    .controls i{
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
+
+.animatedShake{
+    animation: shake linear .11s 6;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-.3rem);
+    } 
+    50%{
+        transform: translateX(0rem);
+    }
+    75%{
+        transform: translateX(.3rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
