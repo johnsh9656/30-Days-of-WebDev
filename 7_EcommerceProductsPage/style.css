@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.864);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.nav li{
+    display: inline;
+    margin-right: 25px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+.nav a:hover{
+    transform: scale(110%);
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+.banner span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.banner h1{
+    margin-top: -10px;
+    font-size: 80px;
+    font-weight: 800;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.heading h2{
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.product-options{
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.product-options a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.product-options a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.product-options a.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-around;
+    gap: 20px;
+}
+.product{
+    display: none;
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.product.show{
+    display: block;
+    animation: productAppear 0.5s;
+}
+@keyframes productAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+    transform: scale(1);
+    }
+}
+.product img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+.product-details{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.product-details span{
+    opacity: 80%;
+    font-size: 14px;
+}
+.product-details p{
+    margin: 2% 0;
+    font-size: 18px;
+}
+.product-details p:last-of-type{
+    font-size: 17px;
+}
