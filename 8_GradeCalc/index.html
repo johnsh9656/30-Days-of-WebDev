@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McMaster GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="ls">
+            <div class="title">
+                <h1>McMaster GPA Calculator</h1>
+            </div>
+            <div class="input-container">
+                <h2>Input Courses</h2>
+                <div class="name-input">
+                    <p>Course:</p>
+                    <input type="text" id="name-i" maxlength="16" placeholder="MATH 1ZC3">
+                </div>
+                <div class="credits-input">
+                    <p>Credits:</p>
+                    <input type="text" id="credits-i" maxlength="2" placeholder="3">
+                </div>
+                <div class="grade-input">
+                    <p>Grade Earned:</p>
+                    <input type="text" id="grade-i" maxlength="2" placeholder="12">
+                </div>
+
+                <div class="add-button">
+                    <button onclick="addCourse()">Add Course</button>
+                </div>
+            </div>
+            <div class="gpa-stats">
+                <h2>Calculated GPA</h2>
+                <span id="total-credits">Total Credits: </span>
+                <span id='12-point'>12-Point Scale: </span>
+                <span id='4-point'>4-Point Scale: </span>
+                <span id='percent'>Percentage: </span>
+            </div>
+        </div>
+        <div class="column" id="rs">
+            <h2>Course List</h2>
+            <ul id="list-container">
+                <li id="list-head">
+                    Course
+                    <span>Credits</span>
+                    <span>Grade</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
