@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(120deg, #272a53, #090b18);
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.search{
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 6rem;
+}
+.search::placeholder {
+    color: #7378c5;
+}
+.search:focus{
+    background-color: #22254b;
+    outline: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.movie-info h3{
+    margin: 0;
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+}
+.movie-info span{
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.movie-info span.green{
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: rgb(189, 42, 42);
+}
+.overview{
+    background-color: #2f335e;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: TranslateY(-101%);
+    transition: transform 0.3s ease-in;
+    margin-bottom: 20px;
+    max-height: 88%;
+}
+.overview span{
+    color: #eee;
+}
+.overview h3{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
+.poster{
+    overflow: hidden;
+}

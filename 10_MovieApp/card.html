@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Card</title>
+    <link rel="stylesheet" href="card_style.css" />
+    <script src="card_script.js" defer></script>
+</head>
+<body>
+    <div class="movie-card">
+        <div class="movie-title">
+            <h1 id="title">Movie Title<span id="rating"># / 10</span></h1>
+        </div>
+        <div class="content-area">
+            <div class="poster"><img id="poster"></div>
+            <div class="details">
+                <div class="about">
+                    <h2>About the Movie</h3>
+                    <span id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ducimus exercitationem non fugit at odit adipisci illo? Ad, aliquid earum est hic assumenda non quisquam. Necessitatibus?</span>
+                    <div class="cast" id="cast">
+                    </div>
+                </div>
+                <div class="genres">
+                    <h2>Genres</h2>
+                    <span id="genres">Action, Adventure, Comedy</span>
+                </div>
+                <div class="buttons">
+                    <button id="buy-btn">BUY MOVIE</button>
+                    <button id="trailer-btn">WATCH TRAILER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="return-btn" onclick="returnToApp()">RETURN</button>
+</body>
