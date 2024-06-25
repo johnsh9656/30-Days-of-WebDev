@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    align-items: center;
+    background: linear-gradient(135deg, #f1ceb6, #e7a16f);
+}
+.container{
+    margin: 6px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 200px;
+    background: linear-gradient(135deg, #ff8026, #d45e09);
+}
+h1{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.timer{
+    margin-bottom: 20px;
+}
+.timer input{
+    width: 50px;
+    margin-right: 5px;
+    text-align: center;
+}
+.timer button{
+    margin: 5px 5px 0 5px;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.timer button:hover{
+    background-color: #0056b3;
+}
+.timer-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#countdown{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notes{
+    width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    overflow-y: auto;
+    box-sizing: border-box
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

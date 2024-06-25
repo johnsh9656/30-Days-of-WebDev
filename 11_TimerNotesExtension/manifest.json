@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Timer + Notes",
+    "version": "1.0",
+    "description": "Extension for setting timers and keeping notes",
+    "permissions": [
+      "storage", "notifications"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "64": "scroll.png"
+      }
+    },
+    "icons": {
+      "64": "scroll.png"
+    }
+}
