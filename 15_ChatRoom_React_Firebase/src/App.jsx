@@ -10,7 +10,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhVc9kMbjDdc-7B0w76y4exT_KKnCxScs",
+  apiKey: "",
   authDomain: "react-chat-room-d9cd7.firebaseapp.com",
   projectId: "react-chat-room-d9cd7",
   storageBucket: "react-chat-room-d9cd7.appspot.com",
