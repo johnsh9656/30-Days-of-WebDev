@@ -1,0 +1,33 @@
+.top-bar {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+  }
+  .top-bar button{
+    height: 40px;
+    width: 80px;
+    background-color: #2e48dc;
+  }
+  .progress-bar-container {
+    background-color: lightgrey;
+    width: 60%;
+    height: 20px;
+    border-radius: 15px;
+  }
+  .progress-bar-fill {
+    background-color: green;
+    height: 100%;
+    border-radius: 15px;
+    transition: width 1s ease;
+  }
+  .lives-text {
+    font-size: 1.4rem;
+  }
+  .lives-text span{
+    font-size: 1.3rem;
+    font-weight: 600;
+  }

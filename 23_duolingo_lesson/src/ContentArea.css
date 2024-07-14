@@ -1,0 +1,195 @@
+.content-area {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .content-area h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .problem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .problem img {
+    margin-left: 20px;
+    width: 100px;
+    height: 100%;
+    margin-right: 20px;
+  }
+  .problem-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+  }
+  .content-area hr {
+    border: none;
+    height: 2px;
+    background-color: #4A4A4A;
+    margin: 5px 0;
+    margin-bottom: 10px;
+  }
+  .input-section {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .input-section-empty {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .input-section .word{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+  .selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .word {
+    background-color: #333333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    user-select: none;
+    text-align: center;
+  }
+  .word.pop-in {
+    animation: pop-in .2s ease;
+  }
+  .word:hover {
+    background-color: #555555;
+  }
+  @keyframes pop-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  
+  .content-area.success {
+    text-align: center;
+  }
+  .content-area.success h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #4fff6c;
+  }
+  .content-area.success h2 {
+    margin: 0;
+    font-size: 4rem;
+  }
+  .content-area.success p {
+    margin: 40px;
+    font-size: 1rem;
+  }
+  
+  .content-area.failure {
+    text-align: center;
+  }
+  .content-area.failure h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #cd2722;
+  }
+  .content-area.failure h2 {
+    margin: 0;
+    font-size: 4rem;
+  }
+  .content-area.failure p {
+    margin: 40px;
+    font-size: 1rem;
+  }
+  
+  .problem-text-blank {
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .problem-text-blank input {
+    width: 120px;
+    height: 1rem;
+    margin: 0 5px;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline;
+  }
+  
+  .problem-match {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .match-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 45%;
+  }
+  .match-column .word {
+    margin: 5px;
+    padding: 5px 10px
+  }
+  .match-word {
+    background-color: #292929;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .content-area.break {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .content-area.break h1 {
+    font-size: 2.5rem;
+    color:rgb(59, 213, 51)
+  }
+  .content-area.break h2 {
+    margin-top: 40px;
+  }
