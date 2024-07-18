@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <title>Web Components Example</title>
+  <style>
+    body {
+      padding: 0px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgb(5, 5, 5);
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .left-container {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-weight: 600;
+      color: white;
+      font-size: 1.8rem;
+    }
+    h2 {
+      color: rgb(211, 211, 211);
+      font-size: 1rem;
+    }
+    card-container {
+      height: 90%;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    card-container::-webkit-scrollbar {
+      display: none; 
+    }
+
+    @media (min-width: 1000px) {
+      body {
+        flex-direction: row;
+      }
+      .left-container {
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+      card-container {
+        margin-right: 20px;
+        margin-left: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left-container">
+    <h1>People Cards w/ Web Components</h1>
+    <h2>Hello, World.</h2>
+  </div>
+
+  <card-container></card-container>
+
+  
+  <script src="userCard.js"></script>
+  <script src="cardContainer.js"></script>
+</body>
+</html>
