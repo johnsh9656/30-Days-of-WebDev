@@ -1,0 +1,32 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.lesson-container {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.lesson-container button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.lesson-container button:hover {
+  border-color: #646cff;
+}
+.lesson-container button:focus,
+.lesson-container button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

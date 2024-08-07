@@ -1,0 +1,69 @@
+.lesson-info {
+    position: absolute;
+    width: 250px;
+    top: 90px;
+    left: -142px;
+    background-color: #58CC02;
+    border: 1px solid #2D6017;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 100;
+    color: #FFF;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    transition: transform .4s ease;
+    transform-origin: 68% 0%;
+    transform: scale(100%);
+}
+.lesson-info.hidden {
+    transform: scale(0%);
+}
+
+.text-section {
+    width: 96%;
+    margin-top: -12px;
+    text-align: left;
+}
+
+.text-section h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+.text-section p {
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.lesson-info button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: #58CC02;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px rgba(103, 103, 103, 0.423);
+}
+
+.lesson-info button:focus,
+.lesson-info button:focus-visible {
+  animation: ButtonPress .5s ease 1;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+@keyframes ButtonPress {
+    0%, 100% {
+        transform: translateX(var(--translateX, 0)) scale(100%);
+    }
+    50% {
+        transform: translateX(var(--translateX, 0)) scale(90%);
+    }
+}

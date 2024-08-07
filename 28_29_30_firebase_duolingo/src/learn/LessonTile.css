@@ -1,0 +1,56 @@
+.lesson-tile-container img {
+    transition: transform ease .2s;
+}
+
+.lesson-tile-container {
+    width:fit-content;
+    position: relative;
+    display: inline-block;
+}
+
+.lesson-tile-start {
+    position: absolute;
+    width: 50px;
+    background-color: #1e1e1e;
+    border: 2px solid rgb(93, 93, 93);
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #0f0;
+    font-weight: 600;
+    transform: translateY(-120px);
+    animation: MoveVertical 4s ease-in-out infinite;
+    transition: opacity .4s ease;
+    opacity: 100%;
+    text-align: center;
+    left: 2px;
+    z-index: 10;
+}
+.lesson-tile-start.invisible {
+    opacity: 0%;
+}
+
+@keyframes MoveVertical {
+    0%, 100% {
+        transform: translateY(-125px);
+    }
+    50% {
+        transform: translateY(-105px);
+    }
+}
+
+.complete:hover, .incomplete:hover {
+    transform: scale(1.05);
+}
+.unavailable {
+    z-index: 1;
+}
+
+.shift-right {
+    transform: translateX(60px);
+    z-index: 6;
+}
+
+.shift-left {
+    transform: translateX(-60px);
+    z-index: 5;
+}
