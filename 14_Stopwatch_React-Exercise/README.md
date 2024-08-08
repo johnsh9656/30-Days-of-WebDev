@@ -1,8 +1,7 @@
-# React + Vite
+# Day 14 - Stopwatch with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, Vite
 
-Currently, two official plugins are available:
+Continuing to learn React, this project is another short exercise to become familiar with working in a React environment. In contrast to previously making a stopwatch, rather than directly manipulating the DOM through JavaScript, I use JavaScript to control what is returned by the components in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](readme_preview.png)

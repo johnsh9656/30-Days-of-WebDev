@@ -1,8 +1,8 @@
-# React + Vite
+# Day 16, 17 - Social Media Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, Vite
 
-Currently, two official plugins are available:
+Continuing to learn React, recreating more effects in React which I previously accomplished through DOM manipulation, such as the filters for the social media posts. I also learned more about the many React hooks and used some of them in this project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](readme_preview.png)
+![](readme_preview_1.png)

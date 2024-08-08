@@ -1,8 +1,13 @@
-# React + Vite
+# Day 28, 29, 30 - Duolingo Learn Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, Vite, Firebase
 
-Currently, two official plugins are available:
+For the final project of these 30 days, I combined and heavily updated the previous Duolingo clone projects with Firebase's Cloud Firestore Database to create a fully-working Duolingo clone app (although the contents are mostly test data). I spent time learning the basics of Firebase to make sure the app worked properly, and in impleneting Firebase into the project I added a sign-in page, loading screens, and user data being saved. 
+Additionally, applying my learning from the project before this, the app incorporates responsive CSS to look good at any screen size!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Sign-In Page](readme_preview.png)
+![Loading the Learn Page](readme_preview_1.png)
+![Learn Page on Desktop](readme_preview_2.png)
+![Learn Page on Mobile](readme_preview_3.png)
+![Lesson page on Mobile](readme_preview_4.png)
+![Lesson Complete on Mobile](readme_preview_5.png)

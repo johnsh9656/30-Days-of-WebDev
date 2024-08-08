@@ -1,8 +1,9 @@
-# React + Vite
+# Day 20, 21, 22, 23 - Duolingo Lesson
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, Vite
 
-Currently, two official plugins are available:
+Continuation of Duolingo's translation problems into a full Duolingo-like lesson with translation problems, match problems, blank problems, audio, and more intermediate JavaScript to match.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](readme_preview.png)
+![](readme_preview_1.png)
+![](readme_preview_2.png)

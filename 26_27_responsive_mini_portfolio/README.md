@@ -1,8 +1,9 @@
-# React + Vite
+# Day 26, 27 - Responsive Mini-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, Vite
 
-Currently, two official plugins are available:
+I decided to learn about responsive CSS to make content look good on any screen size. At the same time, I wanted to create some sort of temporary mini-portfolio, not to show projects but display information about msyelf. I combined these to create this (with working links, previous resume, and accurate information)!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Desktop View](readme_preview.png)
+![Smaller Screen View](readme_preview_1.png)
+![Mobile View 1](readme_preview_2.png)![Mobile View 2](readme_preview_3.png)
