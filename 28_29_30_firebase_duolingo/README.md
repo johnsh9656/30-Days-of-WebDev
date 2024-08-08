@@ -10,4 +10,4 @@ Additionally, applying my learning from the project before this, the app incorpo
 ![Learn Page on Desktop](readme_preview_2.png)
 ![Learn Page on Mobile](readme_preview_3.png)
 ![Lesson page on Mobile](readme_preview_4.png)
-![Lesson Complete on Mobile](readme_preview_5.png)
+![alt text](readme_preview_5.png "Lesson Complete on Mobile")
